@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav-link{
+    color: ;
+    /* font-size: 1.2rem; */
+}
+#hover{
+    /* color: blue; */
+    font-size: 1.2rem;
+}
+#hover:hover{
+    /* color: #e67112da ; */
+    /* border: 1px solid white; */
+    /* text-decoration: none; */
+    color: #e67112da;
+    border-bottom: dotted 3px  #e67112da;
+    border-top: dotted 3px  #e67112da;
+    border-right: dotted 3px  #e67112da;
+    border-left: dotted 3px  #e67112da;
+    padding: 0.5rem;
+}
+#hero{
+    text-align: center;
+}
+#fd7e14
