@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
     <title>WCCG</title>
     <link rel="icon" href="images/logo.png" type="image/icon">
 </head>
@@ -16,8 +17,8 @@
             <nav class="navbar navbar-expand-lg scroll navbar-light " id="nav1">
                 <div class="container">
                   <a class="navbar-brand" href="#"><img src="images/logo2.png" alt="" class="w-75"></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span onclick="openNav()" class="navbar-toggler-icon"></span>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span  class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-white">
@@ -25,10 +26,10 @@
                         <a class="nav-link active" id="hover" aria-current="page" href="index.html">HOME</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" id="hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link active dropdown dropbtn" id="hover" href="#" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
                           ABOUT
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="about.html">ABOUT THE CHURCH</a>
                           <a class="dropdown-item" href="meet.html">MEET PASTOR DANIEL</a>
                         </div>
@@ -87,32 +88,62 @@
     <section>
         <div class="any">
             <div class="container" id="hero">
-               <p style="font-size: 20px;">Watchtower christian church of God (WCCG) is a church with the mandate to <br>
-                <span style="font-size: 35px; line-height: 30px; font-weight: normal; font-style: normal; font-family: lato;">raise a people after God's heart in every nation of the earth</span> <br>
-               <p style="font-size: 20px;"> WCCG is home for victorious people. We are structured to meet the five purposes of a church
-                <br >
-               </p>
-               <p style="font-size: 20px;"> Worship, evangelism, fellowship, discipleship and ministry.</p>
-                
-               <span style="font-size: 20px;"> We love God and people.</span></p>
+               <div class="row">
+                 <div class="col-12 col-xl-6">
+                   <h3>Join a group</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio inventore dignissimos, voluptates facilis non blanditiis perspiciatis repellendus aut ratione autem, aspernatur labore, tempore corporis nam architecto enim atque laborum consequatur. <br>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                   </p>
+                 </div>
+                 <div class="col-12 col-xl-6">
+                   <h3>Church Mission</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio inventore dignissimos, voluptates facilis non blanditiis perspiciatis repellendus aut ratione autem, aspernatur labore, tempore corporis nam architecto enim atque laborum consequatur. <br>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                   </p>
+                 </div>
+               </div>
             </div>
         </div>
+        <div class="s-about" id="about">
+          <div class="container">
+            <div class="row about-content">
+              <div class="col">
+                <h3 class="subhead">WELCOME TO WCCG</h1>
+                <P class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat eum non pariatur eveniet accusamus laudantium, ut, quia unde officiis doloremque, iure omnis est cupiditate neque vitae consectetur eligendi ipsa officia!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae saepe ullam eius, debitis necessitatibus impedit alias ut corrupti delectus, similique iusto numquam ad neque eaque repellendus. Accusamus optio tempore odio.
+                </P>
+                <button type="button" class="btn btn--primary btn--about">Warning</button>
+              </div>
+              <div class="col">
+                <ul class="about-sched">
+                  <li>
+                      <h4>Main Church Service</h4>
+                      <p>
+                      Sunday - 9:00 AM | 1:00 PM | 4:30 PM <br>
+                      1600 Amphitheatre Parkway, Mt. View, CA, 94043
+                      </p>
+                  </li>
+                  <li>
+                      <h4>Kids Church</h4>
+                      <p>
+                      Sunday - 9:00 AM | 1:00 PM | 4:30 PM <br>
+                      1600 Amphitheatre Parkway, Mt. View, CA, 94043
+                      </p>
+                  </li>
+                  <li>
+                      <h4>Prayer Meeting</h4>
+                      <p>
+                      Saturday - 7:00 PM <br>
+                      1600 Amphitheatre Parkway, Mt. View, CA, 94043
+                      </p>
+                  </li>
+              </ul> <!-- end about-sched-->
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
     
-    <!-- Use any element to open the sidenav -->
-    <span onclick="openNav()">open</span>
-    
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <div id="main">
-      ...
-    </div>
     
 </body>
 <script src="javascript/jquery-3.5.1.min.js"></script>
