@@ -8,7 +8,7 @@ body{
 }
 
 #hover:hover{
-    color: #e67112da;
+    color: rgb(241, 128, 52);
     border-bottom: solid 3px  #e67112da;
     border-top:solid 3px  #e67112da;
     border-right: solid 3px  #e67112da;
