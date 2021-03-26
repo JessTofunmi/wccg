@@ -45,10 +45,10 @@ p{
     background-repeat: no-repeat;
     background-position: center center ;
     background-size: cover;
-    background-attachment: fixed; 
+    /* background-attachment: fixed;  */
     color:#fff;
     /* margin-top: 20rem; */
-    padding: 5rem;
+    padding: 3rem;
 }
 #center{
     text-align: center;
@@ -96,18 +96,6 @@ p{
       max-width: 100%;
     }
   }
-/* .subhead {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    color: #fb8b23;
-    margin-top: 0;
-    margin-bottom: .4rem;
-    margin-left: 4px;
-  }
   .btn.btn--primary,
   button.btn--primary,
   input[type="submit"].btn--primary,
@@ -117,7 +105,6 @@ p{
     border-color: #3b0d11;
     color: #ffffff;
   }
-  
   .btn.btn--primary:hover,
   button.btn--primary:hover,
   input[type="submit"].btn--primary:hover,
@@ -131,7 +118,38 @@ p{
     background: #000000;
     border-color: #000000;
   }
-  .btn,
+  #fb.a{
+      text-align: center;
+  }
+  .copy{
+    text-align: center;
+  }
+  #btn0{
+    color: white;
+  }
+  #btn6{
+    color: white;
+  }
+  #btn7{
+    color: white;
+  }
+  #btn8{
+    color: white;
+  }
+  ul{
+    text-align: center;
+    list-style-type: none;
+  }
+  li{
+    display: inline-block;
+}
+li p{
+    display: block;
+    /* text-decoration: none;  */
+    padding: 1vh;
+    font-size: 21px;
+}
+  /* .btn,
 button,
 input[type="submit"],
 input[type="reset"],
@@ -141,10 +159,10 @@ input[type="button"] {
   font-weight: 700;
   font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: .6rem;
-  height: 6rem;
-  line-height: 5.6rem;
-  padding: 0 3.2rem;
+   letter-spacing: .6rem;
+   height: 6rem;
+  line-height: 2rem;
+  padding: 1rem;
   margin: 0 .4rem 1.6rem 0;
   color: #ffffff;
   text-decoration: none;
@@ -156,7 +174,22 @@ input[type="button"] {
   -moz-osx-font-smoothing: grayscale;
   background-color: #272727;
   border: 0.2rem solid #272727;
-}
+} */
+  
+/* .subhead {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: #fb8b23;
+    margin-top: 0;
+    margin-bottom: .4rem;
+    margin-left: 4px;
+  }
+  
+  
 .s-about {
     padding-top: 2rem;
     /* padding-bottom: 19.6rem; */
