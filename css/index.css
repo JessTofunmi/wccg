@@ -118,8 +118,9 @@ p{
     background: #000000;
     border-color: #000000;
   }
-  #fb.a{
-      text-align: center;
+  .fb{
+      color: yellow;
+      padding: ;
   }
   .copy{
     text-align: center;
@@ -139,6 +140,9 @@ p{
   ul{
     text-align: center;
     list-style-type: none;
+  }
+  a{
+    padding: 4vh;
   }
   li{
     display: inline-block;
