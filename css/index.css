@@ -153,140 +153,132 @@ li p{
     padding: 1vh;
     font-size: 21px;
 }
-  /* .btn,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-   letter-spacing: .6rem;
-   height: 6rem;
-  line-height: 2rem;
-  padding: 1rem;
-  margin: 0 .4rem 1.6rem 0;
-  color: #ffffff;
-  text-decoration: none;
+blockquote{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
   text-align: center;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #272727;
-  border: 0.2rem solid #272727;
-} */
-  
-/* .subhead {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    color: #fb8b23;
-    margin-top: 0;
-    margin-bottom: .4rem;
-    margin-left: 4px;
+  justify-content: center;
+}
+blockquote:before{
+  display: block;
+  content: "\201C";
+  font-size: 120px;
+  position: absolute;
+  left: -25px;
+  top: -40px;
+  color: #7a7a7a;
+}
+blockquote:after{
+  display: block;
+  content: "\201D";
+  font-size: 120px;
+  position: absolute;
+  left: ;
+  top: 140px;
+  right: 15px;
+  color: #7a7a7a;
+}
+blockquote cite{
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+blockquote cite:before{
+  content: "\2014 \2009";
+}
+
+ 
+  /* .com{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 750px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3rem;
+    position: relative;
   }
-  
-  
-.s-about {
-    padding-top: 2rem;
-    /* padding-bottom: 19.6rem; */
-    /* background-color: #3b0d11;
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
-  .s-about .subhead {
-    color: #fb8b23;
-    margin-bottom: 4rem;
-  }
-  
-  .s-about .lead {
-    color: #ffffff;
-    margin-bottom: 4rem;
-  }
-  
-  .s-about .btn--about {
+  .com blockquote.quote{
+    position: relative;
+    text-align: center;
     display: block;
-    width: 100%;
-    margin-right: 0;
-    background-color: #21070a;
-    border-color: #21070a;
+    padding: 1rem 1.2rem;
+    width: 80%;
+    color: #484748;
+    margin: 1rem auto 2rem;
   }
-  .about-content .column:first-child {
-    padding-right: 2.4vw;
+  .com blockquote.EN{
+    background: linear-gradient(to right, #039be5 4px transparent 4px) 100% 100%, linear-gradient(to left, #039be5 4px, transparent 4px) 100% 0, linear-gradient(to bottom, #039be5 4px, transparent 4px) 100% 0, linear-gradient(to top, #039be5 4px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 20px 20px;
   }
-  
-  .about-content .column:last-child {
-    padding-left: 2.4vw;
+  .com blockquote.DE{
+    background: linear-gradient(to right, #039be5 4px transparent 4px) 0% 0%, linear-gradient(to left, #039be5 4px, transparent 4px) 0% 0%, linear-gradient(to bottom, #039be5 4px, transparent 4px) 100% 100%, linear-gradient(to top, #039be5 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
   }
-  .about-sched {
-    list-style: none;
-    margin: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+  .com blockquote.quote:before,
+  .com blockquote.quote:after{
+    font-family: fontAwesome;
+    position: absolute;
+    color: #039be5;
+    font-size: 34px;
   }
-  
-  .about-sched h4 {
-    font-size: 1.5rem;
-    line-height: 1.333;
-    margin-top: 0;
-    text-transform: uppercase;
-    letter-spacing: .4rem;
-    color: #ffffff;
+  .com blockquote.EN:before{
+    content: "\f10d";
+    top: -12px;
+    margin-right: -20px;
+    right: 100%;
   }
-  
-  .about-sched li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 3.2rem;
-    padding-left: 0;
+  .com blockquote.EN:after{
+    content: "\f10e";
+    margin-left: -20px;
+    left: 100%;
+    top: auto;
+    bottom: -20px;
   }
-  
-  /* ------------------------------------------------------------------- 
-   * responsive:
-   * about
-   * ------------------------------------------------------------------- */
-  /* @media screen and (max-width:1200px) {
-    .about-content {
-      max-width: 900px;
-    }
-  
-    .about-content .column:first-child {
-      padding-right: 16px;
-    }
-  
-    .about-content .column:last-child {
-      padding-left: 16px;
-    }
-  
-    .about-content .column:first-child {
-      margin-bottom: 6.4rem;
-    }
-  
+  .com blockquote.DE:before{
+    content: "\f10e";
+    top: -12px;
+    margin-right: -20px;
+    right: 100%;
   }
-  
-  @media screen and (max-width:600px) {
-    .about-content .column:first-child {
-      padding-right: 10px;
-    }
-  
-    .about-content .column:last-child {
-      padding-left: 10px;
-    }
-  
+  .com blockquote.DE:after{
+    content: "\f10d";
+    margin-left: -20px;
+    left: 100%;
+    top: auto;
+    bottom: -20px;
   }
-  
-  @media screen and (max-width:400px) {
-    .about-content .column:first-child {
-      padding-right: 0;
-    }
-  
-    .about-content .column:last-child {
-      padding-left: 0;
-    }
-  
-  }  */
+  .side{
+    position: relative;
+    display: block;
+    padding-left: 1em;
+    border-left: 0.2em solid #039be5;
+    font-family: 'roboto', serif;
+    font-size: 2.4em; 
+    line-height: 1.5em;
+    font-weight: 100;
+  }
+  .side:before, .side:after{
+    font-family: calibri;
+    display: block;
+    color: #039be5;
+    font-size: 34px;
+  }
+  .side:before{content: '\201e';}
+  .side:after{content: '\201e';}
+  .side cite{
+    font-size: 50%;
+    text-align: center;
+    display: block;
+    top: 50%;
+  }
+  .side cite:before{content: '\2015';} */
