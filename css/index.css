@@ -179,9 +179,9 @@ blockquote:after{
   content: "\201D";
   font-size: 120px;
   position: absolute;
-  left: ;
+  margin-left: 50px;
   top: 140px;
-  right: 15px;
+  margin-right: 10px;
   color: #7a7a7a;
 }
 blockquote cite{
@@ -282,3 +282,87 @@ blockquote cite:before{
     top: 50%;
   }
   .side cite:before{content: '\2015';} */
+  :root{
+    --type-body:open sans, Helvetica, Arial, sans-serif;
+  --type-quote: vollkorn;
+  --quote-image-width: 140px;
+  --border-rad: 7px;
+  --accent-color:hsl(322deg 85% 65%);
+  --quote-bg: hsl(0 0% 97%);
+}
+
+  .article{
+    max-width: 900px;
+    margin: auto;
+  }
+  blockquote{
+    position: relative;
+    margin: 40px 0;
+    padding: 1.6em 2.4em .7em calc(1.4em);
+    font: italic 1.2rem var(--type-quote);
+    background: var(--quote-bg) no-repeat left / var(--quote-image-width);
+    border-radius: var(--border-rad);
+    border: 2px solid white;
+    box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
+    text-indent: 1.6em;
+  }
+  @media(min-width: 768px) {
+    blockquote{
+      margin: 40px 60px;
+    }
+  }
+  blockquote::before{
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--border-rad);
+    box-shadow: inset -2px -2px 1px hsl(0 0% 100%), inset 2px 2px 4px hsl(0 0% 0% / 20%);
+  }
+  blockquote::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -2px;
+    transform: translate(-50%, -50%);
+    width: 1.3em;
+    height: 1.3em;
+    background: white;
+    right: 0;
+    bottom: 0;
+    border-radius: 999px;
+    box-shadow:  0 4px 5px -1px hsla(0 0% 0% / 20%);
+    display: grid;
+    place-content: center;
+    padding-top: .5em;
+    color: var(--accent-color);
+    font-size: 36px;
+    font-style: normal;
+    text-indent: 0;
+  }
+  .image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--quote-image-width);
+    height: 100%;
+    opacity: 0.75;
+    background: var(--accent-color) var(--image) no-repeat center / cover;
+    background-blend-mode: hard-light;
+    border-top-left-radius: var(--border-rad);
+    border-bottom-left-radius: var(--border-rad);
+  }
+  cite{
+    display: block;
+    margin: 30px;
+    text-indent: 0;
+    text-align: center;
+    font: .9rem var(--type-body);
+    text-transform: uppercase;
+    color: hsl(0 0% 20%);
+  }

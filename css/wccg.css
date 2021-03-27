@@ -103,7 +103,7 @@ p{
   input[type="submit"].btn--primary,
   input[type="reset"].btn--primary,
   input[type="button"].btn--primary {
-    background: #3b0d11;
+    background: #666464;
     border-color: #3b0d11;
     color: #ffffff;
   }
