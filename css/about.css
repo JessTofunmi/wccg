@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.about{
+    background-image: url('../images/new.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed;  */
+    max-width: 100%;
+    max-height: auto;
+    
+}
+.mg{
+    max-width: 100%;    
+}
+.mg:hover{
+    opacity: 80%;
+    
+}
+

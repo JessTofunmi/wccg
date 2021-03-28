@@ -58,7 +58,7 @@ p{
 }
 .scroll{
     background-color: rgb(212, 104, 14);
-    position: fixed;
+    /* position: fixed; */
     z-index: 1000;
     width: 100%;
     top: 0;  
@@ -144,14 +144,14 @@ p{
     list-style-type: none;
   }
   ul a{
-    padding: 4vh;
+    padding: 3vh;
   }
   li{
     display: inline-block;
 }
 li p{
     display: block;
-    /* text-decoration: none;  */
+   
     padding: 1vh;
     font-size: 21px;
 }
@@ -167,25 +167,7 @@ blockquote{
   text-align: center;
   justify-content: center;
 }
-/* blockquote:before{
-  display: block;
-  content: "\201C";
-  font-size: 120px;
-  position: absolute;
-  left: -25px;
-  top: -40px;
-  color: #7a7a7a;
-} */
-/* blockquote:after{
-  display: block;
-  content: "\201D";
-  font-size: 120px;
-  position: absolute;
-  margin-left: 50px;
-  top: 140px;
-  margin-right: 10px;
-  color: #7a7a7a;
-} */
+
 blockquote cite{
   color: #999999;
   font-size: 14px;
@@ -222,3 +204,7 @@ blockquote cite:before{
     text-indent: 0;
   }
   
+
+  #202121
+
+
