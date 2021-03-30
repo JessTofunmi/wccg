@@ -14,6 +14,9 @@ body{
     border-right: solid 3px  #e67112da;
     border-left: solid 3px  #e67112da;
     padding: 0.5rem;
+    transform: rotateY(360deg);
+    transition: transform 4s;
+    transform-style: preserve-3d;
 }
 #hero{
     text-align: center;
@@ -58,7 +61,7 @@ p{
 }
 .scroll{
     background-color: rgb(212, 104, 14);
-    /* position: fixed; */
+    position: fixed;
     z-index: 1000;
     width: 100%;
     top: 0;  
@@ -224,7 +227,25 @@ blockquote cite:before{
   ::-webkit-scrollbar-thumb:hover {
     background: #b30000; 
   }
+
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
   
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  
+  #e60073
 
   
 

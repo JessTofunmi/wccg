@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.write{
+    padding-top:40px;
+    padding-bottom:0px; 
+    /* background-color:#f9f9f9; */
+    color: black;
+}
+.flip-box {
+    background-color: transparent;
+    width: 50px;
+    height: 40px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateX(180deg);
+  }
+
+  .label{
+    font-size: 1.3rem;
+    color: white;
+    }
+
+.control{
+    position: relative;
+    
+}
+.control i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    visibility: hidden;
+}
+.control input{
+    border-radius: 4px;
+}
+.control.error i.fas{
+    color: red;
+    visibility: visible;
+}
+.control.success i.far{
+   color: rgb(21, 195, 15);
+    visibility: visible;
+}
+.control.success input{
+border-color: rgb(21, 195, 15);
+border-width: 2px;
+border-radius: 4px;
+}
+.control.error input{
+border-color: red;
+border-width: 2px;
+border-radius: 4px;
+}
+.control.error small{
+    color: red;
+}
+.control.success small{
+    color: rgb(21, 195, 15);
+}
+
