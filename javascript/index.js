@@ -17,5 +17,10 @@ window.onscroll = function() {
     location.href = "https://web.facebook.com/bosunoladaniel"
   }
 
+  var btn88 = document.getElementById("btn000")
+  btn000.onclick = function(){
+    location.href = "https://www.youtube.com/channel/UCERtIMujbuqKT-KDZpG8-YQ"
+  }
+
   
   
