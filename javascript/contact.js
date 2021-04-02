@@ -60,3 +60,11 @@ function setSuccessFor(input,message){
 
     formControl.className="control success";
 }
+
+function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+      center: new google.maps.LatLng(6.758056764368059, 3.25410427316781),
+      zoom: 5
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);

@@ -9,12 +9,20 @@ img.image{
 .label{
     font-size: 1.3rem;
     color: black;
-    }
+}
 
 .control{
     position: relative;
 }
-.control a{
+.control i{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    margin-left:5px;
+    visibility: hidden;
+    
+}
+.control i{
     position: absolute;
     top: 1rem;
     right: 1rem;
