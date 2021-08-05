@@ -6,17 +6,21 @@ body{
    
     font-size: 1.2rem;
 }
-
+.navbar{
+  color: white;
+}
+#hover{
+  color: black;
+}
+.text_color{
+  color: white;
+}
 #hover:hover{
     color: rgb(241, 128, 52);
-    border-bottom: solid 3px  #e67112da;
-    border-top:solid 3px  #e67112da;
-    border-right: solid 3px  #e67112da;
-    border-left: solid 3px  #e67112da;
+    opacity: 50%;
+    
     padding: 0.5rem;
-    /* transform: rotateY(360deg);
-    transition: transform 4s;
-    transform-style: preserve-3d; */
+    
 }
 #hero{
     text-align: center;
@@ -46,7 +50,7 @@ p{
     font-weight: 700;
 }
 .pic{
-    background-image: url('../images/hero-bg-3000.jpg');
+    background-image: url('../images/03.jpg');
     background-repeat: no-repeat;
     background-position: center center ;
     background-size: cover;
@@ -59,14 +63,15 @@ p{
     text-align: center;
     font-size: 20px;
 }
-.scroll{
-    background-color: rgb(212, 104, 14);
+/* .scroll{
+    background-color: white;
     position: fixed;
     z-index: 1000;
     width: 100%;
     top: 0;  
     box-shadow: 2px 0px 2px 3px  rgba(0, 0, 0, 0.7);
-}
+} */
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +90,9 @@ p{
     vertical-align: middle;
     width: 100%;
   }
-  
+  #btn1{
+    width: 250px;
+  }
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
@@ -106,9 +113,9 @@ p{
   input[type="submit"].btn--primary,
   input[type="reset"].btn--primary,
   input[type="button"].btn--primary {
-    background: #3b0d11;
+    background: #cec8c9;
     border-color: #3b0d11;
-    color: #ffffff;
+    color: #000;
   }
   .btn.btn--primary:hover,
   button.btn--primary:hover,
@@ -122,6 +129,7 @@ p{
   input[type="button"].btn--primary:focus {
     background: #000000;
     border-color: #000000;
+    color: #fff;
   }
   .fb{
       color: yellow;
@@ -168,7 +176,7 @@ blockquote{
   position: relative;
   color: #383838;
   text-align: center;
-  justify-content: center;
+  justify-content: ;
 }
 
 blockquote cite{
@@ -179,6 +187,15 @@ blockquote cite{
 }
 blockquote cite:before{
   content: "\2014 \2009";
+}
+.head{
+  background-image: url('../images/church\ \(1\).jpg');
+  height: 700px; 
+  background-size:cover; 
+  background-position: center center;
+  background-attachment:unset;
+  
+  
 }
 
  
@@ -228,24 +245,12 @@ blockquote cite:before{
     background: #b30000; 
   }  */
 
-  /* .glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
+  .glow {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  } */
-  
   #e60073
+  #3b0d11
 
   
 
