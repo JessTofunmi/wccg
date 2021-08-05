@@ -22,5 +22,8 @@ window.onscroll = function() {
     location.href = "https://www.youtube.com/channel/UCERtIMujbuqKT-KDZpG8-YQ"
   }
 
+
+  // scroll
+	
   
   
